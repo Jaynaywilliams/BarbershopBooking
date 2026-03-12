@@ -1,11 +1,20 @@
 
-# Chop It Up Barber Shop — Frontend (v2.2)
+# Chop It Up Barber Shop — Frontend (v2.2.1)
 
-Full site restyle to red/black/white with **black header**, Arial font, and brand copy:
-> "Bakersfield's premier barbershop — pull up and get chopped up!"
+This build includes favicon hooks and Open Graph metadata.
 
-## Logo
-Place your **transparent logo** at `assets/logo.png` (already referenced by the site). If you upload a different name, update the `<img>` src in `index.html` (header & footer).
+## Add your real brand assets
+Place the **transparent logo** generated earlier at:
+- `assets/logo.png` (header/footer)
 
-## Backend URL
-Set `BOOKING_API_URL` in `script.js` after your Azure backend is live.
+Place the **favicon** generated earlier at:
+- `assets/favicon.png` (32×32)
+- `assets/favicon-180.png` (180×180, optional for Apple touch icon)
+
+(Optional) Place a social preview at:
+- `assets/og-image.png` (1200×630)
+
+> Files above are referenced by `index.html`. If filenames differ, update the `<head>` links accordingly.
+
+## Deploy
+Push to your GitHub Pages repo (branch `main`, root). Pages will auto‑publish.

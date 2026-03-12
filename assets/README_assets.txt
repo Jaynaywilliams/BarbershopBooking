@@ -1,0 +1,1 @@
+Upload logo.png, favicon.png (32x32), favicon-180.png (180x180), og-image.png (1200x630) into this folder.
