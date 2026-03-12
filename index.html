@@ -6,10 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Barbershop • Book Your Cut</title>
   <meta name="description" content="Modern barbershop website with online booking." />
-  <meta name="theme-color" content="#111827" />
+  <meta name="theme-color" content="#0b0b0b" />
   <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="./styles.css" />
-  <style>/* critical hero styling to avoid FOUC */ .hero{background:linear-gradient(135deg,#111827 0%,#1f2937 55%,#111827 100%);} </style>
+  <style>.hero{background:linear-gradient(135deg,#0b0b0b 0%,#161616 55%,#0b0b0b 100%);} </style>
 </head>
 <body>
   <header class="site-header">
@@ -23,7 +23,7 @@
         <a href="#barbers">Barbers</a>
         <a href="#pricing">Pricing</a>
         <a href="#hours">Hours</a>
-        <a href="#book" class="btn btn-accent">Book Now</a>
+        <a href="#book" class="btn btn-primary">Book Now</a>
       </nav>
     </div>
   </header>
@@ -44,21 +44,21 @@
   <section id="services" class="section">
     <div class="container">
       <h2 class="section-title">Services</h2>
-      <div class="card-grid" id="servicesGrid"><!-- populated by script.js --></div>
+      <div class="card-grid" id="servicesGrid"></div>
     </div>
   </section>
 
   <section id="barbers" class="section alt">
     <div class="container">
       <h2 class="section-title">Our Barbers</h2>
-      <div class="card-grid barber-grid" id="barbersGrid"><!-- populated by script.js --></div>
+      <div class="card-grid barber-grid" id="barbersGrid"></div>
     </div>
   </section>
 
   <section id="pricing" class="section">
     <div class="container">
       <h2 class="section-title">Pricing</h2>
-      <table class="pricing-table" id="pricingTable"><!-- populated by script.js --></table>
+      <table class="pricing-table" id="pricingTable"></table>
     </div>
   </section>
 
@@ -67,7 +67,7 @@
       <h2 class="section-title">Hours & Location</h2>
       <div class="two-col">
         <div>
-          <ul class="hours" id="hoursList"><!-- populated by script.js --></ul>
+          <ul class="hours" id="hoursList"></ul>
           <p class="contact">
             <strong>Phone:</strong> <a href="tel:+15555555555" id="shopPhone">(555) 555‑5555</a><br/>
             <strong>Address:</strong> <span id="shopAddress">123 Main St, Your City, CA</span>
@@ -75,10 +75,7 @@
         </div>
         <div>
           <div class="map-embed">
-            <!-- Placeholder map box; swap with a real Google Maps embed later -->
-            <div class="map-placeholder">Map preview
-              <small>Replace with a real map embed</small>
-            </div>
+            <div class="map-placeholder">Map preview <small>Replace with a real map embed</small></div>
           </div>
         </div>
       </div>
@@ -90,35 +87,14 @@
       <h2 class="section-title">Book an Appointment</h2>
       <form id="booking-form" class="form">
         <div class="grid-2">
-          <label>
-            Full Name
-            <input type="text" name="name" placeholder="First Last" required />
-          </label>
-          <label>
-            Phone
-            <input type="tel" name="phone" placeholder="(555) 123‑4567" required />
-          </label>
-          <label>
-            Email (optional)
-            <input type="email" name="email" placeholder="you@example.com" />
-          </label>
-          <label>
-            Service
-            <select name="service" id="serviceSelect" required></select>
-          </label>
-          <label>
-            Barber
-            <select name="barber" id="barberSelect" required></select>
-          </label>
-          <label>
-            Date & Time
-            <input type="datetime-local" name="start" id="startInput" required />
-          </label>
+          <label>Full Name<input type="text" name="name" placeholder="First Last" required /></label>
+          <label>Phone<input type="tel" name="phone" placeholder="(555) 123‑4567" required /></label>
+          <label>Email (optional)<input type="email" name="email" placeholder="you@example.com" /></label>
+          <label>Service<select name="service" id="serviceSelect" required></select></label>
+          <label>Barber<select name="barber" id="barberSelect" required></select></label>
+          <label>Date & Time<input type="datetime-local" name="start" id="startInput" required /></label>
         </div>
-        <label>
-          Notes (optional)
-          <textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea>
-        </label>
+        <label>Notes (optional)<textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea></label>
         <div class="form-footer">
           <button type="submit" class="btn btn-primary">Confirm Booking</button>
           <p id="status" role="status" aria-live="polite"></p>
