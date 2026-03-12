@@ -1,20 +1,15 @@
 
-# Chop It Up Barber Shop — Frontend (v2.2.1)
+# Chop It Up Barber Shop — Frontend (v2.2.2)
 
-This build includes favicon hooks and Open Graph metadata.
+Code bundle prepared for fully branded deployment with favicons & OG tags.
 
-## Add your real brand assets
-Place the **transparent logo** generated earlier at:
-- `assets/logo.png` (header/footer)
+## Place your PNG assets in /assets before deploying
+- logo.png            (transparent logo you uploaded)
+- favicon.png         (32×32)
+- favicon-180.png     (180×180)
+- og-image.png        (1200×630)
 
-Place the **favicon** generated earlier at:
-- `assets/favicon.png` (32×32)
-- `assets/favicon-180.png` (180×180, optional for Apple touch icon)
-
-(Optional) Place a social preview at:
-- `assets/og-image.png` (1200×630)
-
-> Files above are referenced by `index.html`. If filenames differ, update the `<head>` links accordingly.
+All references are already wired in index.html.
 
 ## Deploy
 Push to your GitHub Pages repo (branch `main`, root). Pages will auto‑publish.
