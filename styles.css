@@ -1,36 +1,42 @@
 
 :root{
   --bg:#0b0b0b; --bg-soft:#111111; --surface:#ffffff; --text:#111111; --muted:#6b7280;
-  --primary:#111111; --accent:#ff1e1e; --accent-2:#ffffff;
+  --primary:#111111; --accent:#ff1e1e; --accent-2:#ffffff; --blue:#0a51a1;
   --ring:0 0 0 3px rgba(255,30,30,.25);
 }
-*{box-sizing:border-box} html,body{height:100%}
-body{margin:0;font-family:ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:#f6f7fb}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;font-family: Arial, Helvetica, sans-serif;color:var(--text);background:#f6f7fb}
 a{color:var(--accent);text-decoration:none}
 .container{width:min(1100px,92%);margin-inline:auto}
-.site-header{position:sticky;top:0;z-index:100;background:#fff;border-bottom:1px solid #e5e7eb}
+/* Header */
+.site-header.black{position:sticky;top:0;z-index:100;background:#0b0b0b;border-bottom:1px solid #1f2937}
+.site-header.black .nav a{color:#e5e7eb}
+.site-header.black .brand-name{color:#e5e7eb}
 .header-inner{display:flex;align-items:center;justify-content:space-between;padding:.8rem 0}
 .brand{display:flex;align-items:center;gap:.6rem;font-weight:800;letter-spacing:.2px}
-.brand .logo{width:36px;height:36px}
-.brand.small .logo{width:28px;height:28px}
+.brand .logo{width:48px;height:auto}
+.brand.small .logo{width:36px;height:auto}
 .brand-name{font-size:1.05rem}
 .nav{display:flex;gap:1rem;align-items:center}
-.nav a{color:var(--text);font-weight:600;opacity:.9}
+.nav a{font-weight:600;opacity:.9}
 .nav a:hover{opacity:1}
 .btn{display:inline-block;padding:.75rem 1rem;border-radius:10px;font-weight:800;letter-spacing:.3px}
 .btn-primary{background:var(--accent);color:#fff;box-shadow:0 8px 18px rgba(255,30,30,.24)}
+/* Hero */
 .hero{color:#fff;padding:3rem 0 2.5rem}
 .hero-inner{display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:2rem}
-.hero h1{font-size:clamp(2rem,4.5vw,3rem);margin:0 0 .5rem}
+.hero h1{font-size:clamp(1.8rem,4.2vw,2.6rem);margin:0 0 .75rem}
 .hero p{opacity:.9;margin:0 0 1.25rem}
 .hero-art img{max-width:320px;width:100%;opacity:.95;filter:drop-shadow(0 20px 40px rgba(0,0,0,.35))}
+/* Sections */
 .section{padding:3rem 0;background:#fff}
 .section.alt{background:#f8fafc}
-.section-title{margin:0 0 1.25rem;font-size:1.8rem}
+.section-title{margin:0 0 1.25rem;font-size:1.8rem;border-left:6px solid var(--accent);padding-left:.6rem}
 .card-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem}
 .card{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:1rem;box-shadow:0 8px 16px rgba(0,0,0,.03)}
 .card h3{margin:.25rem 0 .25rem;font-size:1.1rem}
-.pill{display:inline-block;padding:.25rem .5rem;border-radius:999px;background:#0b0b0b;color:#fff;font-size:.75rem}
+.pill{display:inline-block;padding:.25rem .5rem;border-radius:999px;background:#0b0b0b;color:#fff;font-size:.75rem;border:1px solid #333}
 .price{font-weight:800;color:var(--accent)}
 .barber{display:grid;grid-template-columns:56px 1fr;gap:.75rem;align-items:center}
 .barber .avatar{width:56px;height:56px;border-radius:50%;background:#0b0b0b;color:#fff;display:grid;place-items:center;font-weight:900;border:2px solid var(--accent)}
@@ -43,13 +49,15 @@ a{color:var(--accent);text-decoration:none}
 .hours{list-style:none;padding:0;margin:0}
 .hours li{padding:.4rem 0;border-bottom:1px dashed #e5e7eb}
 .map-placeholder{background:#0b0b0b;border:1px solid #1f2937;border-radius:12px;height:220px;display:grid;place-items:center;color:#e5e7eb}
+/* Form */
 .form{background:#fff;border:1px solid #e5e7eb;border-radius:14px;padding:1rem;box-shadow:0 8px 16px rgba(0,0,0,.03)}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:.85rem}
 label{display:grid;gap:.35rem;font-weight:700}
-input,select,textarea{padding:.75rem .8rem;border:1px solid #d1d5db;border-radius:10px;font-size:1rem;outline:none}
+input,select,textarea{padding:.75rem .8rem;border:1px solid #d1d5db;border-radius:10px;font-size:1rem;outline:none;font-family: Arial, Helvetica, sans-serif}
 input:focus,select:focus,textarea:focus{box-shadow:var(--ring);border-color:#ff1e1e}
 .form-footer{display:flex;align-items:center;gap:.75rem;margin-top:.75rem}
 #status{color:#374151;min-height:1.25rem}
+/* Footer */
 .site-footer{background:#0b0b0b;color:#e5e7eb;padding:1rem 0;margin-top:2rem}
 .footer-inner{display:flex;align-items:center;justify-content:space-between}
 @media (max-width:900px){.hero-inner{grid-template-columns:1fr;text-align:center}.nav{display:none}}

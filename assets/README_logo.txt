@@ -1,0 +1,1 @@
+Place your transparent logo as logo.png in this folder. It is referenced by index.html header and footer.
