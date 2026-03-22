@@ -24,7 +24,7 @@ const BARBERS=[
 ];
 
 // Backend URL — FIXED FOR RENDER
-const BOOKING_API_URL="https://barbershopbooking-backend.onrender.com/api/bookings";
+const BOOKING_API_URL="https://barbershopbooking.onrender.com/api/bookings";
 
 const $=id=>document.getElementById(id);
 $('brandName').textContent=SHOP.name; 
