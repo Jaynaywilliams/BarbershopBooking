@@ -2,8 +2,8 @@
 const SHOP={
   name:'Chop It Up Barber Shop',
   phone:'(661) 555-0123',
-  address:'Bakersfield, CA',
-  hours:[['Mon','9:00 AM – 6:00 PM'],['Tue','9:00 AM – 6:00 PM'],['Wed','9:00 AM – 6:00 PM'],['Thu','9:00 AM – 6:00 PM'],['Fri','9:00 AM – 7:00 PM'],['Sat','9:00 AM – 5:00 PM'],['Sun','Closed']],
+  address:'923 H St, Bakersfield, CA 93304',
+  hours:[['Mon','Closed'],['Tue','9:00 AM – 6:00 PM'],['Wed','9:00 AM – 6:00 PM'],['Thu','9:00 AM – 6:00 PM'],['Fri','9:00 AM – 7:00 PM'],['Sat','9:00 AM – 5:00 PM'],['Sun','Closed']],
 };
 
 // Services
@@ -18,9 +18,9 @@ const SERVICES=[
 // Barbers
 const BARBERS=[
   {id:'any',name:'Any Available',initials:'A'},
-  {id:'alex',name:'Alex',initials:'AX'},
-  {id:'jordan',name:'Jordan',initials:'JD'},
-  {id:'taylor',name:'Taylor',initials:'TY'},
+  {id:'Calvin',name:'Alex',initials:'AX'},
+  {id:'Dre',name:'Jordan',initials:'JD'},
+  {id:'Mike',name:'Taylor',initials:'TY'},
 ];
 
 // Backend URL — FIXED FOR RENDER
