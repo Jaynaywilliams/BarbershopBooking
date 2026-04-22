@@ -18,9 +18,9 @@ const SERVICES=[
 // Barbers
 const BARBERS=[
   {id:'any',name:'Any Available',initials:'A'},
-  {id:'Calvin',name:'Alex',initials:'AX'},
-  {id:'Dre',name:'Jordan',initials:'JD'},
-  {id:'Mike',name:'Taylor',initials:'TY'},
+  {id:'Calvin',name:'Alex',initials:''},
+  {id:'Dre',name:'Jordan',initials:''},
+  {id:'Mike',name:'Taylor',initials:''},
 ];
 
 // Backend URL — FIXED FOR RENDER
