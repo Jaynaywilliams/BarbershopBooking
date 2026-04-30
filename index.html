@@ -102,6 +102,19 @@
           <label>Barber<select name="barber" id="barberSelect" required></select></label>
           <label>Date & Time<input type="datetime-local" name="start" id="startInput" required /></label>
         </div>
+        
+!-- Calendly inline widget -->
+<div 
+  class="calendly-inline-widget"
+  data-url="https://calendly.com/chop-it-up-barbershop03/30min"
+  style="min-width:320px;height:700px;">
+</div>
+
+<script 
+  src="https://assets.calendly.com/assets/external/widget.js" 
+  async>
+</script>
+
         <label>Notes (optional)<textarea name="notes" rows="3" placeholder="Anything we should know?"></textarea></label>
         <div class="form-footer">
           <button type="submit" class="btn btn-primary">Confirm Booking</button>
